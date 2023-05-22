@@ -48,7 +48,7 @@ class MyThread(threading.Thread):
                 sock = socket.socket(
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
-                msg = Pacotes[random.randrange(0,1)]
+                msg = Pacotes[random.randrange(0,3)]
                      
                 sock.sendto(msg, (ip, int(port)))
                 
@@ -68,7 +68,7 @@ class MyThread(threading.Thread):
 
 if __name__ == '__main__':
     try:
-     for x in range(500):                                    
+     for x in range(1000000):                                    
             mythread = MyThread()  
             mythread.start()                                  
             time.sleep(.1)    
