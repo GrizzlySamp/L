@@ -3,9 +3,6 @@ import socket
 import time
 import os,sys
 import threading
-import colorama
-from colorama import Fore, Back, Style
-colorama.init()
 
 print("\u001b[35m Selamat Datang di Grizzly Tools")
 time.sleep(2)
